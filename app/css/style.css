@@ -1,0 +1,385 @@
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-500.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "MuseoSansCyrl";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "BebasNeuePro";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/BebasNeuePro/BebasNeuePro-Bold.eot");
+  src: url("../fonts/BebasNeuePro/BebasNeuePro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeuePro/BebasNeuePro-Bold.woff") format("woff"), url("../fonts/BebasNeuePro/BebasNeuePro-Bold.ttf") format("truetype"); }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: normal;
+  font-family: "MuseoSansCyrl", sans-serif;
+  font-weight: 500;
+  background: #fff;
+  color: #000000; }
+
+html, body {
+  overflow-x: hidden; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.text-center {
+  text-align: center; }
+
+a {
+  display: block;
+  text-decoration: none;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  outline: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; }
+  a:hover, a:focus {
+    text-decoration: none; }
+
+input, textarea, select {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0 17px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "MuseoSansCyrl", sans-serif;
+  border: 1px solid #E4C035;
+    border-radius: 20px;
+  width: 100%;
+  height: 46px;
+  background: transparent;
+  color: #8EAD57; }
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
+    color: #8EAD57; }
+  input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
+    color: #8EAD57; }
+  input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder {
+    color: #8EAD57; }
+  input::placeholder, textarea::placeholder, select::placeholder {
+    color: #8EAD57; }
+  input:hover, input:focus, textarea:hover, textarea:focus, select:hover, select:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+
+label {
+  display: block;
+  width: 100%;
+  margin: 0 0 13px; }
+  label:last-child {
+    margin: 0; }
+
+textarea {
+  resize: none;
+  padding: 12px 17px;
+  height: 103px; }
+
+button, .btn {
+  outline: none;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  cursor: pointer;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-family: "MuseoSansCyrl", sans-serif;
+  padding: 0;
+  margin: 0;
+  border: none;
+    border-radius: 0; }
+  button:hover, button:focus, .btn:hover, .btn:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border-radius: 30px;
+  padding: 17.5px 18px;
+  font-size: 18px;
+  font-weight: 500; }
+
+.btn-sm {
+  padding: 15.5px 18px; }
+
+.btn-accent {
+  color: #fff;
+  background: linear-gradient(275deg, #DCAA42 2.43%, #F5CE39 94.57%); }
+  .btn-accent:hover {
+    background: -webkit-gradient(linear, left top, right top, color-stop(2.43%, #DCAA42), color-stop(94.57%, #F5CE39));
+    background: linear-gradient(to right, #DCAA42 2.43%, #F5CE39 94.57%);
+    color: #fff; }
+  .btn-accent .btn-icon {
+    fill: #fff; }
+
+.btn-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 20px 0 0;
+  width: 25px;
+  height: 25px; }
+
+.svg-icon {
+  display: inline-block;
+  width: 100%;
+  height: 100%; }
+
+strong, b {
+  font-weight: bold;
+  display: inline-block; }
+
+ul, ol {
+  padding: 0 0 0 20px; }
+
+.my-ul {
+  list-style: none;
+  padding: 0; }
+
+.container {
+  max-width: 1340px;
+  padding: 0 10px; }
+  .container .row {
+    margin: 0 -10px; }
+    .container .row > * {
+      padding: 0 10px; }
+
+h1 {
+  font-size: 231px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "BebasNeuePro", sans-serif;
+  line-height: 182px;
+  margin: 0 0 43px; }
+
+h2 {
+  font-family: "BebasNeuePro", sans-serif;
+  text-transform: uppercase;
+  font-size: 108px;
+  font-weight: bold;
+  line-height: 100px;
+  margin: 0 0 55px; }
+
+.box-text {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 35px; }
+
+.decor {
+  z-index: -1;
+  position: absolute; }
+
+.btn-group {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn:nth-child(n+3), .btn-group > :not(.btn-check) + .btn {
+  border-radius: 30px; }
+
+.mb-30 {
+  margin-bottom: 30px; }
+
+.btn-view:before {
+  content: '';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 20px 0 0;
+  width: 25px;
+  min-width: 25px;
+  height: 18px;
+  background: url("../img/view-icon.svg") no-repeat center;
+    background-size: 100%; }
+
+.btn-video:before {
+  content: '';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  margin: 0 20px 0 0;
+  background: url("../img/play.svg") no-repeat center;
+    background-size: 100%; }
+
+.list-radio {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .list-radio li {
+    margin: 0 0 22px;
+    width: calc(50% - 15px); }
+    .list-radio li:last-child {
+      margin: 0; }
+  .list-radio label {
+    margin: 0; }
+
+.radio {
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #DCAA42;
+  font-size: 16px;
+  font-weight: normal;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  height: 42px; }
+  .radio input {
+    position: absolute;
+    border: 1px solid #DCAA42;
+      border-radius: 30px;
+    background: transparent;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer; }
+    .radio input:checked {
+      background: #DCAA42; }
+      .radio input:checked + .radio-text {
+        color: #fff; }
+
+.radio-text {
+  position: relative;
+  z-index: 1; }
+
+.slick-slider {
+  width: 100%; }
+
+.slick-slide {
+  outline: none; }
+
+.slick-dots {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  list-style: none; }
+  .slick-dots li {
+    cursor: pointer;
+    margin: 0 21px 0 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #285A2B;
+      border-radius: 50%;
+    -webkit-transition: .3s ease;
+    transition: .3s ease; }
+    .slick-dots li:last-child {
+      margin: 0; }
+    .slick-dots li button {
+      display: none; }
+  .slick-dots .slick-active {
+    background: #285A2B; }

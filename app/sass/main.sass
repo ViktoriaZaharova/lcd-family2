@@ -1,0 +1,347 @@
+@import "vars"
+
+/*==========  section home ==========*/
+.home
+  color: #fff
+  position: relative
+  z-index: 1
+
+
+.home-content
+  padding: 150px 0 380px
+  background: url("../img/home-bg.svg") no-repeat center bottom
+    size: cover
+  position: relative
+  z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    left: 94px
+    top: 120px
+    width: 1064px
+    height: 796px
+    background: url("../img/home-decor.svg") no-repeat center
+      size: 100%
+    z-index: -1
+
+.home-image
+  min-width: 712px
+  margin: 0 -150px 0 0
+
+.home-bg
+  width: 100%
+  @include d-flex
+  position: relative
+  z-index: -1
+  margin: -255px auto 0
+  img
+    width: 100%
+
+/*==========  section home end  ==========*/
+
+/*==========  section hots ==========*/
+.hots
+  margin: -60px 0 95px
+  position: relative
+  z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 345px
+    background: url("../img/hots-bg.svg") no-repeat center top
+      size: cover
+
+.start-order
+  position: relative
+  color: #fff
+  margin: 0 0 40px
+  background: linear-gradient(117.27deg, #285A2B 2.41%, #18461B 99.56%)
+  border-radius: 30px
+  padding: 34px 59px 117px
+  z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    bottom: 0
+    right: 161px
+    width: 313px
+    height: 105px
+    background: url("../img/decor-start.svg") no-repeat center
+      size: 100%
+  h2
+    margin: 0
+
+.advantages-box
+  width: 100%
+  height: 100%
+  text-align: center
+  font-size: 20px
+  border: 3px solid #B7E49B
+    radius: 30px
+  padding: 46px 20px
+  p
+    font-weight: bold
+    margin: 0 auto 9px
+
+.home-day
+  width: 100%
+  background: linear-gradient(180deg, #EDF1EC 3.33%, rgba(237, 241, 236, 0) 100%)
+  border-radius: 20px
+  padding: 46px 52px 80px 143px
+  position: relative
+  margin: 105px 0 0
+  &:before
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 30px
+    width: 91px
+    height: 195px
+    background: url("../img/decor1.svg") no-repeat center
+      size: 100%
+  .btn
+    width: 100%
+    margin: 56px 0 0
+
+.home-day-title
+  width: 100%
+  position: relative
+  color: #2B4E27
+  font-size: 64px
+  font-weight: bold
+  margin: 0 0 37px
+  &:before
+    content: ''
+    position: absolute
+    left: -96px
+    top: 50%
+    transform: translate(0,-50%)
+    width: 56px
+    height: 56px
+    background: url("../img/fire.svg") no-repeat center
+      size: 100%
+
+.home-day-content
+  width: 100%
+  display: flex
+  align-items: center
+  .box-text
+    width: calc(100% - 202px)
+    padding: 0 0 0 32px
+    font-size: 24px
+  span
+    display: block
+    margin: 3px 0 0
+    font-weight: bold
+
+.home-day-plane
+  max-width: 202px
+  @include d-flex
+
+.sorting-home
+  margin: 26px 0 0
+  width: 100%
+  border: 3px solid #FFE88F
+    radius: 30px
+  padding: 32px 52px 38px 38px
+  h3
+    width: 100%
+    margin: 0 0 22px
+    color: #2F5327
+    font-size: 24px
+    font-weight: 600
+
+.sorting-home-form
+  width: 100%
+  h4
+    width: 100%
+    margin: 0 0 20px
+    font-size: 18px
+  .form-col
+    height: 100%
+    padding: 0 20px 0 0
+    border:
+      right: 1px solid #FFE88F
+  .form-col-sum
+    padding: 0
+    border: none
+  button
+    max-width: 192px
+    width: 100%
+    text-align: left
+    line-height: 22px
+
+.input-range-wrapper
+  width: 320px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  .input-range
+    width: 100%
+    margin: 14px 0 0
+    .value
+      color: #DCAA42
+      font-size: 14px
+      font-family: $default-font
+  .ui-widget.ui-widget-content
+    border: none
+      radius: 2px
+    background: #FFE88F
+    height: 4px
+  .ui-widget-header
+    background: #DCAA42
+    border-radius: 2px
+
+  .ui-slider .ui-slider-handle
+    width: 16px
+    height: 16px
+    background: #FFFFFF
+    border: 4px solid #DCAA42
+      radius: 50%
+
+
+
+.input-range-val
+
+/*==========  section hots end  ==========*/
+
+/*==========  section about ==========*/
+.about
+  h2
+    margin: 0 0 43px
+  .box-text
+    max-width: 602px
+    margin: 0 0 55px
+
+.about-image
+  margin: 0 auto 75px
+  @include d-flex
+
+.about-slider-item
+  width: 100%
+  margin: 0 0 53px
+  position: relative
+  border-radius: 30px
+  overflow: hidden
+  color: #fff
+  height: 253px
+
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &__title
+    width: 100%
+    position: absolute
+    bottom: 0
+    left: 0
+    padding: 28px 66px
+    text-transform: uppercase
+    font-size: 64px
+    font-weight: bold
+    font-family: $font
+    z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(360deg, rgba(43, 78, 39, 0.6) 0%, rgba(43, 78, 39, 0) 25.27%)
+
+
+/*==========  section about end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+
+/*==========  section documents ==========*/
+.documents
+  padding: 133px 0 179px
+  position: relative
+  z-index: 1
+  &:before, &:after
+    content: ''
+    position: absolute
+    z-index: -1
+  &:before
+    right: 311px
+    width: 620px
+    height: 725px
+    background: url("../img/document-decor2.svg") no-repeat center
+      size: 100%
+    bottom: -596px
+  &:after
+    right: 970px
+    bottom: -400px
+    width: 354px
+    height: 517px
+    background: url("../img/document-decor1.svg") no-repeat center
+      size: 100%
+
+.documents-card
+  width: 100%
+  height: 100%
+  border: 3px solid #B7E49B
+    radius: 30px
+  padding: 34px 60px 62px
+  font-size: 20px
+  text-align: center
+  &__icon
+    @include d-flex
+    margin: 0 auto 27px
+  .btn
+    margin: 33px auto 0
+    width: 100%
+/*==========  section documents end  ==========*/
