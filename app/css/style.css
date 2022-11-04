@@ -276,6 +276,9 @@ h2 {
 .mb-30 {
   margin-bottom: 30px; }
 
+.mb-20 {
+  margin-bottom: 20px; }
+
 .btn-view:before {
   content: '';
   display: -webkit-box;
