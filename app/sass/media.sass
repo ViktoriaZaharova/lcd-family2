@@ -268,6 +268,12 @@
     .nav-link
       padding: 0 0 15px
 
+  .list-result-item
+    flex-wrap: wrap
+
+  .list-result-td
+    strong
+      display: block
 
 
 /* Medium Devices, Desktops */
@@ -484,6 +490,21 @@
   .location-family-map
     max-width: 550px
 
+  .list-result-td
+    width: 25%
+    flex: none
+    padding: 0 10px
+    &:last-child
+      width: 100%
+    .btn
+      margin: 0 auto
+
+  .sorting-home-result
+    padding: 30px
+
+  .list-result__plane
+    width: 25%
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
   header
@@ -593,6 +614,11 @@
 
   .location-family-map
     max-width: 400px
+
+  .list-result-td, .list-result__plane
+    width: 50%
+    margin: 0 0 10px
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
@@ -905,3 +931,10 @@
 
   .tooltip-wrapper3
     right: 80px
+
+  .list-result-td, .list-result__plane
+    width: 100%
+    padding: 0
+
+  .list-result-td strong
+    display: inline
