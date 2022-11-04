@@ -1615,9 +1615,33 @@
   </div>
 </footer>
 
+<!-- Modal -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Задать вопрос</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form">
+          <label>
+            <input type="text" name="name" placeholder="имя">
+          </label>
+          <label>
+            <input type="text" name="name" placeholder="phone" required>
+          </label>
+          <button type="submit" class="btn btn-sm btn-accent">Отправить</button>
+          <div class="consent">нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="js/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>

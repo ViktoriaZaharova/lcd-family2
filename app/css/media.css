@@ -296,6 +296,16 @@
       footer .btn-group .btn {
         max-width: 320px;
         width: 100%; }
+  .footer-wrapper-column {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
   .callback-wrapper {
     margin: 30px 0 40px; }
   .messengers {
