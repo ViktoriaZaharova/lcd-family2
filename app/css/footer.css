@@ -91,7 +91,11 @@ footer {
   .callback-wrapper h3 {
     width: 100%;
     margin: 0 0 20px;
-    font-size: 32px; }
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "OktaNeue", sans-serif; }
+  .callback-wrapper input, .callback-wrapper textarea {
+    font-family: "OktaNeue", sans-serif; }
 
 .form-callback {
   width: 100%;
@@ -114,14 +118,17 @@ footer {
       max-width: 155px; }
   .form-callback button {
     width: 100%;
-    font-size: 16px; }
+    font-size: 16px;
+    margin: 0; }
 
 .consent {
   margin: 17px auto 0;
   text-align: center;
   color: #8EAD57;
   font-size: 8px;
-  line-height: 12px; }
+  line-height: 12px;
+  font-family: "OktaNeue", sans-serif;
+  max-width: 149px; }
 
 .copyright-wrapper {
   width: 100%;

@@ -206,6 +206,8 @@ h2
 .mb-30
   margin-bottom: 30px
 
+
+
 .btn-view
   &:before
     content: ''
@@ -237,7 +239,7 @@ h2
   li
     margin: 0 0 22px
     width: calc(50% - 15px)
-    &:last-child
+    &:last-child, &:nth-child(3)
       margin: 0
   label
     margin: 0
@@ -279,6 +281,28 @@ h2
 .slick-slide
   outline: none
 
+.slick-arrow
+  position: relative
+  z-index: 1
+  opacity: 1
+  outline: none
+  width: 58px
+  height: 58px
+  border: none
+    radius: 50%
+  @include d-flex
+  cursor: pointer
+  transition: .3s ease
+  background: linear-gradient(275deg, #DCAA42 2.43%, #F5CE39 94.57%)
+  svg
+    width: 12px
+    height: 24px
+    stroke: #fff
+    fill: none
+
+.slick-next
+  background: linear-gradient(to right, #DCAA42 2.43%, #F5CE39 94.57%)
+
 .slick-dots
   width: 100%
   position: relative
@@ -302,4 +326,50 @@ h2
       display: none
   .slick-active
     background: #285A2B
-      
+
+.sorting-wrapper
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: flex-end
+  label
+    margin: 0 44px 0 0
+    width: fit-content
+    &:last-child
+      margin: 0
+
+.select
+  cursor: pointer
+  color: #DCAA42
+  appearance: none
+  background: #fff url("../img/select.svg") no-repeat calc(100% - 28px) center
+    size: 20px
+  padding: 0 68px 0 28px
+
+
+.tab-content
+  margin: 55px 0 0
+
+.nav-tabs
+  border: none
+  .nav-item
+    margin: 0 27px 0 0
+    &:last-child
+      margin: 0
+  .nav-link
+    border: 1px solid #DCAA42
+      radius: 30px
+    padding: 14px 29px
+    margin: 0
+    color: #DCAA42
+    font-size: 16px
+    font-weight: normal
+    &:hover
+      color: #fff
+      background: #DCAA42
+      border-color: #DCAA42
+    &.active
+      background: linear-gradient(275deg, #DCAA42 2.43%, #F5CE39 94.57%)
+      color: #fff
+      border-color: transparent
+      box-shadow: 0px 10px 30px rgba(243, 153, 31, 0.2)

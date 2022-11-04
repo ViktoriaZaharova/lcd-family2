@@ -26,6 +26,27 @@
   src: url("../fonts/BebasNeuePro/BebasNeuePro-Bold.eot");
   src: url("../fonts/BebasNeuePro/BebasNeuePro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeuePro/BebasNeuePro-Bold.woff") format("woff"), url("../fonts/BebasNeuePro/BebasNeuePro-Bold.ttf") format("truetype"); }
 
+@font-face {
+  font-family: "OktaNeue";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/OktaNeue/OktaNeue-Regular.eot");
+  src: url("../fonts/OktaNeue/OktaNeue-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OktaNeue/OktaNeue-Regular.woff") format("woff"), url("../fonts/OktaNeue/OktaNeue-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OktaNeue";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/OktaNeue/OktaNeue-Medium.eot");
+  src: url("../fonts/OktaNeue/OktaNeue-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/OktaNeue/OktaNeue-Medium.woff") format("woff"), url("../fonts/OktaNeue/OktaNeue-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "OktaNeue";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/OktaNeue/OktaNeue-Bold.eot");
+  src: url("../fonts/OktaNeue/OktaNeue-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OktaNeue/OktaNeue-Bold.woff") format("woff"), url("../fonts/OktaNeue/OktaNeue-Bold.ttf") format("truetype"); }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -307,7 +328,7 @@ h2 {
   .list-radio li {
     margin: 0 0 22px;
     width: calc(50% - 15px); }
-    .list-radio li:last-child {
+    .list-radio li:last-child, .list-radio li:nth-child(3) {
       margin: 0; }
   .list-radio label {
     margin: 0; }
@@ -355,6 +376,38 @@ h2 {
 .slick-slide {
   outline: none; }
 
+.slick-arrow {
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  outline: none;
+  width: 58px;
+  height: 58px;
+  border: none;
+    border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  background: linear-gradient(275deg, #DCAA42 2.43%, #F5CE39 94.57%); }
+  .slick-arrow svg {
+    width: 12px;
+    height: 24px;
+    stroke: #fff;
+    fill: none; }
+
+.slick-next {
+  background: -webkit-gradient(linear, left top, right top, color-stop(2.43%, #DCAA42), color-stop(94.57%, #F5CE39));
+  background: linear-gradient(to right, #DCAA42 2.43%, #F5CE39 94.57%); }
+
 .slick-dots {
   width: 100%;
   position: relative;
@@ -383,3 +436,61 @@ h2 {
       display: none; }
   .slick-dots .slick-active {
     background: #285A2B; }
+
+.sorting-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  .sorting-wrapper label {
+    margin: 0 44px 0 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
+    .sorting-wrapper label:last-child {
+      margin: 0; }
+
+.select {
+  cursor: pointer;
+  color: #DCAA42;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: #fff url("../img/select.svg") no-repeat calc(100% - 28px) center;
+    background-size: 20px;
+  padding: 0 68px 0 28px; }
+
+.tab-content {
+  margin: 55px 0 0; }
+
+.nav-tabs {
+  border: none; }
+  .nav-tabs .nav-item {
+    margin: 0 27px 0 0; }
+    .nav-tabs .nav-item:last-child {
+      margin: 0; }
+  .nav-tabs .nav-link {
+    border: 1px solid #DCAA42;
+      border-radius: 30px;
+    padding: 14px 29px;
+    margin: 0;
+    color: #DCAA42;
+    font-size: 16px;
+    font-weight: normal; }
+    .nav-tabs .nav-link:hover {
+      color: #fff;
+      background: #DCAA42;
+      border-color: #DCAA42; }
+    .nav-tabs .nav-link.active {
+      background: linear-gradient(275deg, #DCAA42 2.43%, #F5CE39 94.57%);
+      color: #fff;
+      border-color: transparent;
+      -webkit-box-shadow: 0px 10px 30px rgba(243, 153, 31, 0.2);
+              box-shadow: 0px 10px 30px rgba(243, 153, 31, 0.2); }
