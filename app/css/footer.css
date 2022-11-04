@@ -25,6 +25,10 @@ footer {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start; }
+    footer .btn-group .btn {
+      -webkit-box-flex: 0;
+          -ms-flex: none;
+              flex: none; }
   footer .btn-icon {
     width: 26px;
     height: 26px; }
@@ -175,7 +179,8 @@ footer {
 .map {
   border-radius: 30px;
   width: 344px;
-  height: 351px; }
+  height: 351px;
+  overflow: hidden; }
 
 .messengers {
   margin: 0 0 80px; }

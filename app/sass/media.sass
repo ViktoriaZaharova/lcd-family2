@@ -245,6 +245,31 @@
   .choice-layout
     margin: 60px 0 100px
 
+  .about-slider-item__title
+    font-size: 50px
+    padding: 20px 30px
+    line-height: 1
+
+  .about
+    h2
+      margin: 0 0 30px
+
+  .about-image
+    margin: 0 auto 40px
+
+  .location-family
+    margin: 130px 0 80px
+    h2, .box-text
+      margin: 0 0 50px
+
+  .nav-tabs-location
+    .nav-item
+      margin: 0 0 20px
+    .nav-link
+      padding: 0 0 15px
+
+
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1110px)
   .form-callback
@@ -354,6 +379,9 @@
       padding: 0 0 0 20px
 
   .sorting-home-form
+    .form-col
+      border: none
+      padding: 0
     .form-col-sum
       margin: 30px auto 0 0
       width: calc(100% - 270px)
@@ -361,9 +389,7 @@
     button
       margin: auto 0
       max-width: 270px
-    .form-col
-      border: none
-      padding: 0
+
 
   .input-range-wrapper
     width: 100%
@@ -431,6 +457,32 @@
         max-width: 200px
     .tab-content
       margin: 50px 0 0
+
+  .about-image
+    max-width: 400px
+
+  .about
+    .box-text
+      max-width: none
+      margin: 0 0 30px
+
+  .about-slider-item-max, .about-slider-item
+    height: 255px
+
+  .location-family
+    margin: 100px 0 80px
+    .box-text
+      padding: 0
+      margin: 0 0 30px
+
+  .nav-tabs-location
+    margin: 0 0 30px
+    .nav-link
+      font-size: 20px
+      padding: 0 0 10px
+
+  .location-family-map
+    max-width: 550px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
@@ -519,6 +571,28 @@
 
   .tooltip-wrapper1
     bottom: 100px
+
+  .about-image
+    max-width: 300px
+
+  .about-slider-item
+    margin: 0 0 30px
+    &__title
+      font-size: 40px
+
+  .about-slider
+    .slick-dots
+      margin: 30px 0 0
+
+  .location-family
+    h2
+      margin: 0 0 30px
+
+  .location-family-item
+    font-size: 30px
+
+  .location-family-map
+    max-width: 400px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
@@ -671,6 +745,14 @@
   .tooltip-wrapper2
     top: 80px
 
+  .location-family-map
+    max-width: 300px
+    height: 335px
+
+  .location-family-item
+    width: 160px
+    height: 160px
+
 @media only screen and (max-width: 480px)
   .logo
     max-width: 130px
@@ -774,6 +856,19 @@
     padding: 0 170px 0 0
     img
       max-width: 150px
+
+  .about-slider-item, .about-slider-item-max
+    height: 200px
+
+  .about-slider-item
+    &__title
+      font-size: 30px
+
+  .location-family
+    margin: 70px 0 60px
+
+  .location-family-item
+    font-size: 24px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 370px)

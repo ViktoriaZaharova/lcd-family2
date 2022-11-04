@@ -228,16 +228,18 @@
   @include d-flex
 
 .about-slider
-  .slide
-    //height: 253px
-    margin: 0 0 53px
-  //.slide-max
-    height: 702px
+  padding: 20px 0 0
+  .slick-dots
+    margin: 54px 0 0
 
 .about-slider-item
   width: 100%
+  height: 253px
   position: relative
   color: #fff
+  margin: 0 0 53px
+  &:last-child
+    margin: 0
   img
     width: 100%
     height: 100%
@@ -264,7 +266,8 @@
     border-radius: 30px
     background: linear-gradient(360deg, rgba(43, 78, 39, 0.6) 0%, rgba(43, 78, 39, 0) 25.27%)
 
-
+.about-slider-item-max
+  height: 702px
 /*==========  section about end  ==========*/
 
 /*==========  section  ==========*/
@@ -295,6 +298,8 @@
   .box-text
     margin: 0 0 75px
     padding: 0 0 0 10px
+  .tab-content
+    margin: 0
 
 .nav-tabs-location
   .nav-item
@@ -322,7 +327,71 @@
       border-color: $accent
 
 
+.location-family-map
+  height: 422px
+  width: 100%
+  max-width: 650px
+  overflow: hidden
+  border-radius: 30px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
 
+
+.location-family-slider
+  .slide
+    margin: 0 20px 0 0
+
+
+.location-family-item
+  position: relative
+  overflow: hidden
+  color: #fff
+  margin: 0 0 16px
+  width: 203px
+  height: 203px
+  z-index: 1
+  font-size: 40px
+  font-weight: bold
+  font-family: $font
+  border-radius: 30px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(360deg, rgba(43, 78, 39, 0.6) 0%, rgba(43, 78, 39, 0) 45.32%)
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+  &:last-child
+    margin: 0
+  span
+    width: 100%
+    position: absolute
+    left: 0
+    bottom: 0
+    padding: 12px 13px
+
+.progress
+  margin: 64px 0 0
+  position: relative
+  width: 100%
+  height: 3px
+  background: #D8D8D8
+
+.progress-bg
+  position: absolute
+  left: 0
+  top: 50%
+  transform: translate(0,-50%)
+  height: 5px
+  background: #2B4E27
 /*==========  section location-family end  ==========*/
 
 /*==========  section life-comfort ==========*/
