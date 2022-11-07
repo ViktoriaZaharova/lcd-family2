@@ -474,6 +474,8 @@
     height: 590px; }
   .h420 {
     height: 355px; }
+  .life-family-slider__box.w100 {
+    max-width: 524px; }
   .choice-variable__text {
     width: 100%; }
   .choice-variable__content .btn {

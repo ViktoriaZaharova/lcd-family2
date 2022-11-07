@@ -1113,6 +1113,9 @@
 .h100 {
   height: 655px; }
 
+.life-family-slider__box.w100 {
+  max-width: 630px; }
+
 /*==========  section end life-family ==========*/
 /*==========  section steps-works ==========*/
 .steps-works {

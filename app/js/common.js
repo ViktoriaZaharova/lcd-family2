@@ -2,18 +2,16 @@ $('[name="phone"]').mask('+7 (999) 999-99-99');
 
 $('.about-slider').slick({
     slidesToShow: 1,
-
     dots: true,
     arrows: false,
     infinite: false,
-    // adaptiveHeight: true
 });
 
 $('.life-family-slider').slick({
     slidesToShow: 1,
     variableWidth: true,
     arrows: false,
-    autoplay: true,
+    // autoplay: true,
 });
 
 $('.planes-slider').slick({
