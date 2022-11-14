@@ -630,14 +630,23 @@
     padding: 20px; }
     .choice-layout-banner__title span {
       font-size: 18px; }
-  .nav-tabs-life .nav-item {
-    width: 50%;
-    border-right: none;
-    margin-right: 0; }
+  .nav-tabs-life {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .nav-tabs-life .nav-item {
+      width: auto;
+      min-width: 170px;
+      border-right: none;
+      margin-right: 0; }
   .life-comfort .tab-content {
     margin: 30px 0 0; }
   .life-comfort-image {
-    height: 400px; }
+    height: 400px;
+    margin: 0 auto 30px; }
   .tooltip-wrapper2 {
     top: 80px; }
   .location-family-map {
@@ -645,7 +654,31 @@
     height: 335px; }
   .location-family-item {
     width: 160px;
-    height: 160px; } }
+    height: 160px; }
+  .about-slider {
+    padding: 0;
+    margin: 0 0 20px; }
+  .choice-layout-radio {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: auto; }
+    .choice-layout-radio li {
+      min-width: 110px; }
+  .overflow-tabs {
+    overflow-x: auto;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
+    .overflow-tabs .nav-link {
+      white-space: nowrap; }
+  .purchase-term-box {
+    padding: 15px;
+    font-size: 14px;
+    line-height: normal;
+    border-radius: 20px; }
+  .steps-works .steps-works-slider {
+    margin: 0; }
+    .steps-works .steps-works-slider > * {
+      padding: 0; } }
 
 @media only screen and (max-width: 480px) {
   .logo {
@@ -734,7 +767,11 @@
   .location-family {
     margin: 70px 0 60px; }
   .location-family-item {
-    font-size: 24px; } }
+    font-size: 24px; }
+  .advantages-box {
+    font-size: 14px;
+    padding: 15px 10px;
+    border-radius: 20px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 370px) {

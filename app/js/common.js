@@ -5,6 +5,17 @@ $('.about-slider').slick({
     dots: true,
     arrows: false,
     infinite: false,
+    responsive: [
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+                fade: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            }
+        }
+    ]
 });
 
 $('.life-family-slider').slick({
@@ -50,6 +61,22 @@ $('.location-family-slider4').slick({
     arrows: false,
     autoplay: true,
 });
+
+// slick active
+$(window).on('load resize', function() {
+    if ($(window).width() < 576) {
+        $('.steps-works-slider:not(.slick-initialized)').slick({
+            dots: true,
+            infinite: true,
+            speed: 100,
+            slidesToShow: 1,
+            arrows: false
+        });
+    } else {
+        $(".steps-works-slider.slick-initialized").slick("unslick");
+    }
+});
+// slick active
 
 //progressbar
 function setProgress1(index) {
