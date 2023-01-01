@@ -63,7 +63,7 @@ $('.location-family-slider4').slick({
 });
 
 // slick active
-$(window).on('load resize', function() {
+$(window).on('load resize', function () {
     if ($(window).width() < 576) {
         $('.steps-works-slider:not(.slick-initialized)').slick({
             dots: true,
